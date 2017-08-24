@@ -1,0 +1,70 @@
+<!--<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>-->
+
+<!DOCTYPE html>
+
+<!--<html xmlns="http://www.w3.org/1999/xhtml">-->
+<html>
+    <head>
+        <title>JacksonApps</title>
+         <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+        <script type = "text/javascript" src = "script.js"></script>
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+    </head>
+    <body>
+       <div id="banner">
+           <h1>JAXAPPS</h1>
+           <hr />
+       </div>
+        
+       <!--photo menu 75px x 75px-->
+        <div class="photobar">
+         <h2>GALLERY</h2> 
+            <table>
+<tbody>
+<tr>
+<td><img src= "https://www.nps.gov/pefo/learn/nature/images/orange-and-red-wildflower-symbol-sm.jpg"></td>
+<td><img src= "https://www.nps.gov/pefo/learn/nature/images/orange-and-red-wildflower-symbol-sm.jpg"></td>
+<td><img src= "https://www.nps.gov/pefo/learn/nature/images/orange-and-red-wildflower-symbol-sm.jpg"></td>
+</tr>
+<tr>
+<td><img src= "https://www.nps.gov/pefo/learn/nature/images/orange-and-red-wildflower-symbol-sm.jpg"></td>
+<td><img src= "https://www.nps.gov/pefo/learn/nature/images/orange-and-red-wildflower-symbol-sm.jpg"></td>
+<td><img src= "https://www.nps.gov/pefo/learn/nature/images/orange-and-red-wildflower-symbol-sm.jpg"></td>
+</tr>
+<tr>
+<td><img src= "https://www.nps.gov/pefo/learn/nature/images/orange-and-red-wildflower-symbol-sm.jpg"></td>
+<td><img src= "https://www.nps.gov/pefo/learn/nature/images/orange-and-red-wildflower-symbol-sm.jpg"></td>
+<td><img src= "https://www.nps.gov/pefo/learn/nature/images/orange-and-red-wildflower-symbol-sm.jpg"></td>
+</tr>
+<tr>
+<td><img src= "https://www.nps.gov/pefo/learn/nature/images/orange-and-red-wildflower-symbol-sm.jpg"></td>
+<td><img src= "https://www.nps.gov/pefo/learn/nature/images/orange-and-red-wildflower-symbol-sm.jpg"></td>
+<td><img src= "https://www.nps.gov/pefo/learn/nature/images/orange-and-red-wildflower-symbol-sm.jpg"></td>
+</tr>
+</tbody>
+</table>
+       </div>
+        <!--Sidebar and nav menu-->
+        <div class="sidebar">
+          <div class="vertical-menu">
+            <a href="#" class="active">Home</a>
+            <a href="#">My Works</a>
+            <a href="#">About Me</a>
+            <a href="#">Contact</a>
+           </div>
+       </div>
+        <!-- Blog content-->
+        <div class="full-back">
+            <div class="blog">
+                <h3>First Day Out</h3><p class="date">8.22.2017</p>
+                <p>
+                    For Mint.com, Jason Putorti and I are refactoring the way we do CSS graphing to support positive and negative values, where the bars are all scaled using percentages, so the design can change without any re-engineering. Hopefully, Jason will write a guest article about this soon, but until then, this development inspired todays article. In our graphs, the negative bar needed to be offset by the height of the positive region, and initially we thought to use the margin-top style to apply this offset. However, when we applied the style, using percentages, the resulting offset was drastically less than expected.
+
+Doing a little research, I was reminded that when you use percents to apply the margin of an element, the browsers determine the actual size of the margin by multiply the percent against the width of the parent node (this is true for margin-top, -right, -bottom, and -left). It is not based on either the height or width of the element that the margin is applied to. So if you have the following DOM snippet:
+                </p>
+            </div>
+        </div>
+       
+    </body>
+</html>
